@@ -27,6 +27,7 @@ function swap(a,b)
 
 swap(10,20);*/
 
+/*
 let nom = "Amine";
 let formation = "REAN";
 
@@ -35,4 +36,34 @@ function info()
     return "Formation chez PLB";
 }
 let phrase = `Je suis ${nom}, la formation est : ${formation}, la formation se déroule chez ${info()}`;
-console.log(phrase);
+console.log(phrase);*/
+
+/*let som = function (x = 0, y = 0) {   // fonction anonyme
+    return x + y;
+}
+
+//console.log(som(10,20));
+console.log(som());*/
+
+// foreach de ES6
+/*
+let languages = ["HTML", "CSS","JS"];
+for(let [index, val] of languages.entries())
+{
+    console.log(`Indice = ${index} : Valeur = ${val}` )
+}*/
+
+let stagiaire = {
+
+    prixFormation : 2000,
+    
+     info(){
+        return "J'apprends REACN";
+    },
+    
+    getLieuPrix(){
+       console.log(`${this.info()} PLB ${this.prixFormation}`);
+    }
+};
+
+stagiaire.getLieuPrix();
